@@ -62,6 +62,8 @@ int main(void)
 	LCD_init();
 	LCD_display_text("Voltage: 0000mV");
 	
+	ADCSRA |= 0x40; // Start conversion
+	
 	while (1)
 	{
 		if (vf)
@@ -71,11 +73,9 @@ int main(void)
 			sprintf(vs, "%04u", v);
 			LCD_display_text(vs);
 			vf = 0; // Clear dirty
-		}
-		else
-		{
-			ADCSRA |= 0x40; // Start conversion
 			wait(100);
+			ADCSRA |= 0x40; // Start conversion
 		}
+		asm(""); // needed for some reason
 	}
 }
