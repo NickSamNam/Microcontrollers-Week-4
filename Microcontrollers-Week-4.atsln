@@ -9,6 +9,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "B2", "B2\B2.cproj", "{BF928
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "B3", "B3\B3.cproj", "{7150A565-934E-4C9C-823D-78DC6890AA62}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "C", "C\C.cproj", "{DEB0ABED-CAD3-46DB-91D8-4599A9060750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -27,6 +29,10 @@ Global
 		{7150A565-934E-4C9C-823D-78DC6890AA62}.Debug|AVR.Build.0 = Debug|AVR
 		{7150A565-934E-4C9C-823D-78DC6890AA62}.Release|AVR.ActiveCfg = Release|AVR
 		{7150A565-934E-4C9C-823D-78DC6890AA62}.Release|AVR.Build.0 = Release|AVR
+		{DEB0ABED-CAD3-46DB-91D8-4599A9060750}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DEB0ABED-CAD3-46DB-91D8-4599A9060750}.Debug|AVR.Build.0 = Debug|AVR
+		{DEB0ABED-CAD3-46DB-91D8-4599A9060750}.Release|AVR.ActiveCfg = Release|AVR
+		{DEB0ABED-CAD3-46DB-91D8-4599A9060750}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
