@@ -16,7 +16,7 @@
 #include "HD44780U.h"
 
 /* Reference voltage (mV) */
-#define Vref 5120
+#define Vref 2560
 
 typedef unsigned long int u_int32;
 typedef unsigned int u_int16;
@@ -54,7 +54,7 @@ int main(void)
 	DDRF &= ~0x01;	// PF0(ADC0) Read
 	
 	// Init ADC
-	ADMUX = 0x20;	// ADC0, Vref off, left adjust result
+	ADMUX = 0xE0;	// ADC0, internal 2.56V refV, left adjust result
 	ADCSRA = 0x8A;	// Enable ADC, interrupt enabled, prescaler 4
 	
 	sei();	// Enable global interrupt
